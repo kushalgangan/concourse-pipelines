@@ -5,6 +5,7 @@ resources:
     icon: github
     source:
       uri: https://github.com/kushalgangan/concourse-pipelines.git
+      branch: main
 
 jobs:
   - name: job
