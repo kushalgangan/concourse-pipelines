@@ -20,7 +20,7 @@ jobs:
             source: { repository: busybox }
           run:
             path: echo
-            args: ["Hello, world!"]
+            args: ["triggered-first job"]
   - name: not-triggered
     public: true
     plan:
@@ -34,7 +34,7 @@ jobs:
             source: { repository: busybox }
           run:
             path: echo
-            args: ["Hello, world!"]
+            args: ["not-triggered job"]
   - name: triggered-second
     public: true
     plan:
@@ -49,4 +49,4 @@ jobs:
             source: { repository: busybox }
           run:
             path: echo
-            args: ["Hello, world!"]
+            args: ["triggered-second job"]
