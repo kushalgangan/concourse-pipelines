@@ -10,6 +10,6 @@ jobs:
   - name: job
     public: true
     plan:
-      - get: concourse-examples
+      - get: concourse-pipelines
       - task: simple-task
         file: concourse-pipelines/005-github-resource-pipeline/task.yml
