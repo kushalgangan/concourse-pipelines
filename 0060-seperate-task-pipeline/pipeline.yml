@@ -12,4 +12,4 @@ jobs:
     plan:
       - get: concourse-pipelines
       - task: simple-task
-        file: concourse-pipelines/005-seperate-task-pipeline/task.yml
+        file: concourse-pipelines/tasks/hello-world.yml
